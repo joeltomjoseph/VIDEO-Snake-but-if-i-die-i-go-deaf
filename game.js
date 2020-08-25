@@ -1,5 +1,7 @@
 var canvas = document.getElementById("the-game");
 var context = canvas.getContext("2d");
+var audio = new Audio('bruh2.mp3');
+//var audio2 = new Audio('bruh.mp3');
 var game, snake, food;
 
 game = {
@@ -20,9 +22,10 @@ game = {
   
   stop: function() {
     game.over = true;
-    game.message = 'GAME OVER - PRESS SPACEBAR';
+    game.message = 'BRUUUHHH';
+    audio.play();
   },
-  
+
   drawBox: function(x, y, size, color) {
     context.fillStyle = color;
     context.beginPath();
