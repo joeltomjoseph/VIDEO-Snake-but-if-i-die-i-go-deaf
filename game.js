@@ -1,7 +1,7 @@
 var canvas = document.getElementById("the-game");
 var context = canvas.getContext("2d");
 var audio = new Audio('bruh2.mp3');
-//var audio2 = new Audio('bruh.mp3');
+//OLD AUDIO : var audio2 = new Audio('bruh.mp3');
 var game, snake, food;
 
 game = {
